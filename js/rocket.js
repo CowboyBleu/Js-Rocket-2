@@ -46,7 +46,7 @@ var changeState = function (state) {
 					randomNumber)
 
 				// succes
-				if (randomNumber > 4) {
+				if (randomNumber > 5) {
 					changeState(4);
 						// do something
 					} else {
