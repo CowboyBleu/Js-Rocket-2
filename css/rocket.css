@@ -49,7 +49,6 @@ a:hover{
 
 .right{
 	background: url('../img/y2k.jpeg') no-repeat center center;
-	background-size: cover;
 	position: fixed;
 	width: 50%;
 	height: 100%;
