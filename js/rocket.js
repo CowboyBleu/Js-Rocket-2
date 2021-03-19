@@ -16,9 +16,23 @@ var changeState = function (state) {
 		countdownNumber = countdownNumber
 			-1;
 		document.getElementById('countdown').innerHTML = countdownNumber;
+
+			if (countdownNumber > 4 && countdownNumber <= 7) {
+				// be nervous
+				document.getElementById('binary').className = 'binary show';
+			} else{
+				document.getElementById('binary').className = 'binary';
+			}
+
+				if (countdownNumber > 1 && countdownNumber <= 4) {
+				// preparing for launch
+				document.getElementById('preparing').className = 'preparing show';
+			} else{
+				document.getElementById('preparing').className = 'preparing';
+			}
+			
 			
 			if (countdownNumber <= 0) {
-
 				changeState(3);
 			};
 		}, 500);
@@ -32,7 +46,7 @@ var changeState = function (state) {
 					randomNumber)
 
 				// succes
-				if (randomNumber > 5) {
+				if (randomNumber > 3) {
 					changeState(4);
 						// do something
 					} else {
