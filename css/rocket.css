@@ -1,10 +1,20 @@
+.interface.state1,
+.interface.state2,
+.interface.state3,
+.interface.state4,
+.interface.state5{
+	background color: white;
+	color: white;
+}
+
 body{
 	font-family: 'helvetica', 'arial', sans-serif;
 }
 
 
 .left{
-	background-color: aquamarine;
+	background: url('../img/matrix.gif') no-repeat center center;
+	background-size: cover;
 	position: fixed;
 	width: 50%;
 	height: 100%;
@@ -12,6 +22,9 @@ body{
 	left: 0;
 
 }
+
+
+
 
 .interface{
 	text-align: center;
@@ -21,8 +34,8 @@ body{
 
 a.button{
 	display: inline-block;
-	background-color: white;
-	color:black;
+	background-color: limegreen;
+	color:white;
 	padding: 20px 40px;
 	text-decoration: none;
 	border-radius: 10px;
@@ -35,7 +48,7 @@ a:hover{
 }
 
 .right{
-	background-color: aliceblue;
+	background: url('../img/y2k.jpeg') no-repeat center center;
 	position: fixed;
 	width: 50%;
 	height: 100%;
